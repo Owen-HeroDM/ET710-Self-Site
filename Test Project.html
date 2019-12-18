@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project 3 Test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    }
+
+          * {
+        box-sizing: border-box;
+      }
+
+      .zoom {
+        padding: 40px;
+        background-color: red;
+        transition: transform .2s;
+        width: 100px;
+        height: 50px;
+        margin: 0 auto;
+      }
+
+      .zoom:hover {
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5);
+      }
+
+    .fa:hover {
+        opacity: 0.7;
+      }
+
+      .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+
+  </style>
+
+<body class="text-center">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <a class="navbar-brand" href="#">Owen's Art Gallary</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Art</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Log in
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Google</a>
+            <a class="dropdown-item" href="#">Facebook</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">E-mail</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+<div style="border: 10px solid black">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="C:\Users\herod\Pictures\future generation semi final.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="C:\Users\herod\Pictures\comic\update Waldron and Erica.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="C:\Users\herod\Pictures\mary jane final.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+        <main role="main" class="inner cover">
+          <h1 class="cover-heading">See What Owen has Made</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam omnis, maxime libero natus qui minus!
+          Pro eirmod torquatos ea, cu tale nibh virtute sit. Sea liber iisque blandit ne, te suscipit pertinacia adolescens mea.
+          Eu consequat referrentur deterruisset cum, qui no solum sanctus.
+          Illud option philosophia at eum. Mel timeam ocurreret no, vix ex ancillae deseruisse voluptatum.</p>
+          <p class="lead">
+            <div class="container">
+
+              <button type="button" class="btn btn-primary zoom text-center" data-toggle="modal" data-target="#myModal">
+                Learn More
+              </button>
+
+
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Extra</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+
+                      <div style="border: 5px solid black">
+
+                      <img class="d-block w-100" src="C:\Users\herod\Pictures\sam_promo_finale_edit.jpg" alt="First slide">
+
+                      </div>
+
+                      Cum et nobis laoreet consequat, copiosae eleifend no nec? Est an nemore saperet. Admodum facilisis signiferumque eum ei, eu nam evertitur interpretaris. Augue conceptam nam eu. Id sit tempor honestatis theophrastus, ludus alterum in ius, his at erat veritus?
+
+                      Aliquip hendrerit usu an, te vero probo imperdiet mei. Dico antiopam et eos, ut vim ubique sententiae, doming mentitum vix ne. Luptatum gloriatur consetetur ea ius. Dicant voluptua repudiandae has in, et unum recteque mea. Soluta omittantur eos et, apeirian philosophia an vim? Nec ridens integre mediocrem in.
+
+                      Assum officiis duo cu, usu adhuc quaestio salutandi ea, cum ad nibh partem doctus. Movet populo eum an! Tantas ocurreret usu ut, pri essent perfecto ei, latine interpretaris in pri. Veniam tamquam sit ea. Alii ipsum iuvaret ei pro. Quem volumus quaestio at ius, ne laudem apeirian sea. An pri simul munere invidunt, mutat fastidii at cum.
+
+                      Ex cum populo minimum efficiantur! Quo vidit animal facilisi ea, erat quas tacimates ei nam! Duo unum facilis voluptua ei, sit cu illum virtute persecuti, sed reque aliquam ut. Vis te insolens quaestio, accumsan lucilius consequat duo et? Duo sale similique ad, no alienum vulputate conclusionemque pro, id eos graeci forensibus. Aliquando tincidunt philosophia mea te, agam abhorreant eos ad, detraxit ullamcorper an cum.
+
+                      Et vix fastidii ullamcorper, cu vel fastidii omittantur. Aeque probatus vel in, sonet libris facilis sed id. Ferri affert semper no usu, duo wisi facilis phaedrum ut! Ad decore suscipiantur vis, est ad novum alterum, ad mea laoreet volumus assentior? Menandri lobortis.
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </p>
+        </main>
+      </div>
+
+
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-instagram"></a>
+
+    <footer class="mastfoot mt-auto">
+      <div class="inner container-fluid bg-danger">
+        <p>2019 No rights reserved</a>, by <a href="https://twitter.com/herodm77">@HeroDM77</a></p>
+      </div>
+    </footer>
+
+</body>
+</html>
